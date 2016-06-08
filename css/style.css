@@ -49,12 +49,12 @@ html {
 }
 
 @keyframes pulse {
-	0%, 95% {
+	0%, 45%, 55%, 85%, 95% {
 		background-size: 315px 300px;
 	}
 
 
-	100% {
+	50%, 90%, 100% {
 		background-size: 350px 332px;
 	}
 }
@@ -156,14 +156,14 @@ html {
 
 .p1 {
 	animation: turnblack .5s linear;
-	animation-delay: 9.5s;
+	animation-delay: 9s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
 }
 
 .p2 {
 	animation: turnblack .5s linear;
-	animation-delay: 10.25s;
+	animation-delay: 9.75s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
 	margin-bottom: 20%;
