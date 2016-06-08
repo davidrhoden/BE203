@@ -5,11 +5,11 @@ body {
 }
 
 html {
-	background: url(../img/Flag_of_Texas.svg) fixed center center no-repeat;
+/*	background: url(../img/Flag_of_Texas.svg) fixed center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
 }
 
 .flag {
@@ -25,27 +25,66 @@ html {
 }
 
 .redstripe {
-	outline: 3px dashed white;
+	background: black;
 	height: 50%;
 	width: 66.5%;
 	bottom: 0;
 	right: 0;
+	animation: fadeToRed 1s linear;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
 }
 
 .whitestripe {
-	outline: 3px dashed red;
+	background: black;
 	height: 50%;
-
+	width: 66.5%;
 	top: 0;
 	right: 0;
+	animation: fadeToWhite 1s linear;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
 }
 
 .bluestripe {
-	outline: 3px dashed orange;
+	background: black;
 	height: 100%;
 	width: 33.5%;
 	top: 0;
 	left: 0;
+	animation: fadeToBlue 1s linear;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+
+@keyframes fadeToBlue{
+  0% {
+    background: black;
+  }
+  100% {
+  	background: blue;
+  }
+}
+@keyframes fadeToWhite {
+  0% {
+    background: black;
+  }
+  100% {
+  	background: white;
+  }
+}
+
+@keyframes fadeToRed {
+  0% {
+    background: black;
+  }
+  100% {
+  	background: red;
+  }
 }
 
 .words {
@@ -53,9 +92,24 @@ html {
 	font-family: 'Roboto', sans-serif;
 	font-size: 4em;
 	position: absolute;
-	bottom: 0;
+	top: 100%;
 	right: 0;
 	text-align: center;
 	text-transform: uppercase;
 	width: 66.5%;
+	animation: slideUp 5s linear 1;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes slideUp {
+	0% {
+		top: 100%;
+		opacity: 0;
+	}
+	100% {
+		top: 15%;
+		opacity: 1;
+	}
 }
