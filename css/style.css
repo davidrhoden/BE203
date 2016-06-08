@@ -26,10 +26,7 @@ html {
 	opacity: 0;
 	width: 100%;
 	z-index: 10;
-	animation: starfade .1s;
-		animation-delay: 12s;
-	animation-iteration-count: 1;
-	animation-fill-mode:forwards;
+	animation: starfade .3s 1 forwards 12s, pulse .8s infinite 2s;
 	animation-timing-function: linear;
 }
 
@@ -37,11 +34,28 @@ html {
 	0% {
 		background-size: 0px 0px;
 		opacity: initial;
+		transform: rotate(0);
+	}
+
+	10% {
+		opacity: 50%;
 	}
 
 	100% {
 		background-size: 315px 300px;
 		opacity: 1;
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes pulse {
+	0%, 95% {
+		background-size: 315px 300px;
+	}
+
+
+	100% {
+		background-size: 350px 332px;
 	}
 }
 
@@ -134,7 +148,7 @@ html {
 		opacity: 0;
 	}
 	100% {
-		top: 15%;
+		top: 8%;
 		opacity: 1;
 	}
 }
@@ -152,6 +166,7 @@ html {
 	animation-delay: 10.25s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
+	margin-bottom: 20%;
 }
 
 @keyframes turnblack {
@@ -163,4 +178,7 @@ html {
 	}
 }
 
+.hidden {
+	visibility: hidden;
+}
 
