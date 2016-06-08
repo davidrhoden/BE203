@@ -97,7 +97,7 @@ html {
 	text-align: center;
 	text-transform: uppercase;
 	width: 66.5%;
-	animation: slideUp 5s linear 1;
+	animation: slideUp 5s linear;
 	animation-delay: 6s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
@@ -113,3 +113,29 @@ html {
 		opacity: 1;
 	}
 }
+
+
+.p1 {
+	animation: turnblack .5s linear;
+	animation-delay: 9.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+.p2 {
+	animation: turnblack .5s linear;
+	animation-delay: 10.25s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes turnblack {
+	0% {
+		color: white;
+	}
+	100% {
+		color: black;
+	}
+}
+
+
