@@ -173,8 +173,12 @@ html {
 	}
 }
 
+p {
+	margin: 0 0 .5em;
+}
 
 .p1 {
+
 	animation: turnblack .5s linear;
 	animation-delay: 9s;
 	animation-iteration-count: 1;
