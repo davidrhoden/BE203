@@ -20,6 +20,31 @@ html {
 	position: relative;
 }
 
+.star {
+	background: url(../img/star.png) center center no-repeat;
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+	z-index: 10;
+	animation: starfade .1s;
+		animation-delay: 12s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes starfade {
+	0% {
+		background-size: 0px 0px;
+		opacity: initial;
+	}
+
+	100% {
+		background-size: 315px 300px;
+		opacity: 1;
+	}
+}
+
 .stripe {
 	position: absolute;
 }
@@ -66,7 +91,7 @@ html {
     background: black;
   }
   100% {
-  	background: blue;
+  	background: #002868;
   }
 }
 @keyframes fadeToWhite {
@@ -83,7 +108,7 @@ html {
     background: black;
   }
   100% {
-  	background: red;
+  	background: #bf0a30;
   }
 }
 
