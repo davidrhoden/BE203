@@ -136,19 +136,39 @@ html {
 	text-align: center;
 	text-transform: uppercase;
 	width: 66.5%;
-	animation: slideUp 5s linear;
+}
+
+.words.one {
+	animation: slideUpOne 5s linear;
 	animation-delay: 6s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
 }
 
-@keyframes slideUp {
+.words.two {
+	animation: slideUpTwo 5s linear;
+	animation-delay: 7.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+@keyframes slideUpOne {
 	0% {
 		top: 100%;
 		opacity: 0;
 	}
 	100% {
-		top: 8%;
+		top: 5%;
+		opacity: 1;
+	}
+}
+
+@keyframes slideUpTwo {
+	0% {
+		top: 150%;
+		opacity: 0;
+	}
+	100% {
+		top: 55%;
 		opacity: 1;
 	}
 }
@@ -166,7 +186,6 @@ html {
 	animation-delay: 9.75s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
-	margin-bottom: 20%;
 }
 
 @keyframes turnblack {
