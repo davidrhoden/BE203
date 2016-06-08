@@ -1,0 +1,42 @@
+body {
+	background: black;
+}
+
+.flag {
+	background: url(../img/Flag_of_Texas.svg) center center no-repeat;
+	height: 100vh;
+	width: 100vw;
+	outline: 3px dashed hotpink;
+}
+
+.stripes {
+	position: relative;
+}
+
+.stripe {
+	position: absolute;
+}
+
+.redstripe {
+	outline: 3px dashed white;
+	height: 50%;
+	width: 66%;
+	bottom: 0;
+	right: 0;
+}
+
+.whitestripe {
+	outline: 3px dashed red;
+	height: 50%;
+	width: 66%;
+	top: 0;
+	right: 0;
+}
+
+.bluestripe {
+	outline: 3px dashed orange;
+	height: 100%;
+	width: 33%;
+	top: 0;
+	left: 0;
+}
