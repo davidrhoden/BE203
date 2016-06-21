@@ -14,7 +14,7 @@ html {
 
 .flexbox-container {
     height: 50%;
-    padding: 12.5%;
+    padding: 3% 12.5%;
     margin: 0;
     display: -webkit-box;
     display: -moz-box;
@@ -27,8 +27,19 @@ html {
 
 .flexbox-title {
 	font-family: 'Roboto', sans-serif;
-	font-size: 6em;
+	font-size: 4em;
+	margin: 10px auto;
 	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.flexbox-body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	margin: 10px auto;
+	text-align: left;
 	height: 100%;
 	width: 100%;
 }
