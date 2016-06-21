@@ -22,7 +22,7 @@ html {
     display: -webkit-flex;
     display: flex;
     -ms-align-items: flex-start;
-	align-items: flex-start;
+	align-items: stretch;
     justify-content: center;
 }
 
@@ -46,8 +46,6 @@ html {
 	margin: 10px 2px;
 	padding: 10px;
 	text-align: left;
-	height: 100%;
-	width: 100%;
 }
 
 .flexbox-body li, .onecolumn-body li{
