@@ -13,8 +13,7 @@ html {
 }
 
 .flexbox-container {
-    height: 50%;
-    padding: 3% 2%;
+    padding: 0 3%;
     margin: 0;
     display: -webkit-box;
     display: -moz-box;
@@ -36,13 +35,29 @@ html {
 }
 
 
+.flexbox-title.intro {
+	height: 10%
+}
+
+.flexbox-vertical-center {
+	height: 75vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+	align-items: center;
+    justify-content: center;
+}
+
 .flexbox-body {
 	background: rgba(107, 156, 173, .2);
 	-ms-align-items: flex-start;
 	align-items: flex-start;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6em;
-	line-height: 1.3em;
+	line-height: 1.1em;
 	margin: 10px 2px;
 	padding: 16px;
 	text-align: left;
@@ -50,7 +65,7 @@ html {
 }
 
 .flexbox-body li, .onecolumn-body li {
-	margin: 8px 0;
+	margin: 10px 0;
 }
 
 .flexbox-body p {
@@ -93,10 +108,12 @@ html {
 
 .button.left a {
 	border-radius: 0 6px 6px 0;
+	padding: 10px 10px 6px 6px;
 	}
 
 .button.right a {
 	border-radius: 6px 0 0 6px;
+	padding: 10px 6px 6px 10px;
 }
 
 .button a {
@@ -105,12 +122,17 @@ html {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: white;
-	padding: 10px;
+
 	text-decoration: none;
 }
 
 .button a:hover {
 	color: black;
+}
+
+.button a img {
+	width: 18px;
+	height: 18px;
 }
 
 .flag {
