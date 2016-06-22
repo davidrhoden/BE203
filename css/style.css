@@ -65,8 +65,34 @@ html {
 	width: 100%;
 }
 
+.flexbox-body.color1 {
+/*background: rgba(244, 236, 106, .5);*/
+background: rgba(107, 156, 173, .15);
+	-ms-align-items: flex-start;
+}
+
+.flexbox-body.color2 {
+	/*background: rgba(187, 207, 74, .5);*/
+	background: rgba(107, 156, 173, .2);
+}
+
+.flexbox-body.color3 {
+/*	background: rgba(231, 63, 11, .5);*/
+	background: rgba(107, 156, 173, .25);
+}
+
+.flexbox-body.color4 {
+	/*background: rgba(187, 207, 74, .5);*/
+	background: rgba(107, 156, 173, .3);
+}
+
 .flexbox-body li, .onecolumn-body li {
 	margin: 10px 0;
+}
+
+.flexbox-body li ul li {
+	font-size: .8em;
+	line-height: 1em;
 }
 
 .flexbox-body p {
@@ -85,8 +111,8 @@ html {
 }
 
 .stepheader {
-		background: rgba(107, 156, 173, .2);
-		margin: -10px -10px 0 -10px;
+		background: rgba(255, 255, 255, .4);
+		margin: -16px -16px 0 -16px;
 		padding: 10px;
 		min-height: 65px;
 }
