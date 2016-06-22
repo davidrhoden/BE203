@@ -152,7 +152,7 @@ background: rgba(107, 156, 173, .15);
 }
 
 .button a:hover {
-	color: black;
+	background: black;
 }
 
 .button a img {
