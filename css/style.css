@@ -21,8 +21,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 4em;
 	line-height: 1em;
-	margin: 10px auto;
-	text-align: center;
+	margin: 10px auto 26px;
+	padding: 0 3%;
+	text-align: left;
 	height: 100%;
 	width: 100%;
 }
@@ -388,6 +389,7 @@ p {
 
 .keystep {
 	font-size: .5em;
+	line-height: .7em;
 }
 
 .textaligncenter {
