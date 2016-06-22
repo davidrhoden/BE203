@@ -357,3 +357,11 @@ p {
 .keystep {
 	font-size: .5em;
 }
+
+.textaligncenter {
+	text-align: center;
+}
+
+.largetype {
+	font-size: 2em;
+}
