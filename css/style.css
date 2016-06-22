@@ -4,14 +4,6 @@ body {
 	padding: 0;
 }
 
-html {
-/*	background: url(../img/Flag_of_Texas.svg) fixed center center no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;*/
-}
-
 .flexbox-container {
     padding: 0 3%;
     margin: 0;
@@ -34,7 +26,6 @@ html {
 	height: 100%;
 	width: 100%;
 }
-
 
 .flexbox-title.intro {
 	height: 10%
@@ -65,26 +56,26 @@ html {
 	width: 100%;
 }
 
-.flexbox-body.color1 {
-/*background: rgba(244, 236, 106, .5);*/
+/*.flexbox-body.color1 {
+/*background: rgba(244, 236, 106, .5);
 background: rgba(107, 156, 173, .15);
 	-ms-align-items: flex-start;
 }
 
 .flexbox-body.color2 {
-	/*background: rgba(187, 207, 74, .5);*/
+	/*background: rgba(187, 207, 74, .5);
 	background: rgba(107, 156, 173, .2);
 }
 
 .flexbox-body.color3 {
-/*	background: rgba(231, 63, 11, .5);*/
+/*	background: rgba(231, 63, 11, .5);
 	background: rgba(107, 156, 173, .25);
 }
 
-.flexbox-body.color4 {
-	/*background: rgba(187, 207, 74, .5);*/
+.flexbox-body.color4 {}
+	/*background: rgba(187, 207, 74, .5);
 	background: rgba(107, 156, 173, .3);
-}
+}*/
 
 .flexbox-body li, .onecolumn-body li {
 	margin: 10px 0;
@@ -119,8 +110,30 @@ background: rgba(107, 156, 173, .15);
 
 .button {
 	position: absolute;
-	top: 48%;
-	text-align: center;
+	top: 0;
+	height: 100vh;
+	width: 50px;
+}
+
+@keyframes slideinLeft {
+	0% {
+		left: -50px;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+
+@keyframes slideinRight {
+	0% {
+		right: -50px;
+	}
+
+	100% {
+		right: 0;
+	}
 }
 
 .button.left {
@@ -131,23 +144,50 @@ background: rgba(107, 156, 173, .15);
 	right: 0;
 }
 
+.button.left:hover a {
+	animation: slideinLeft .5s;
+	animation-delay: 0;
+	animation-direction: forwards;
+	animation-timing-function: linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+  	animation-iteration-count: 1;
+  	-webkit-animation-iteration-count: 1;
+}
+
+.button.right:hover a {
+	animation: slideinRight .5s;
+	animation-delay: 0;
+	animation-direction: forwards;
+	animation-timing-function: linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+  	animation-iteration-count: 1;
+  	-webkit-animation-iteration-count: 1;
+}
+
 .button.left a {
 	border-radius: 0 6px 6px 0;
 	padding: 10px 10px 6px 6px;
+	left: -50px;
+	top: 48%;
+	text-align: center;
 	}
 
 .button.right a {
 	border-radius: 6px 0 0 6px;
 	padding: 10px 6px 6px 10px;
+	right: -50px;
+	top: 48%;
+	text-align: center;
 }
 
 .button a {
 	background: #47AD1C;
 	display: inline-block;
+	position: absolute;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	color: white;
-
 	text-decoration: none;
 }
 
@@ -158,14 +198,6 @@ background: rgba(107, 156, 173, .15);
 .button a img {
 	width: 18px;
 	height: 18px;
-}
-
-.flag {
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	outline: 3px dashed hotpink;
-	position: relative;
 }
 
 .star {
