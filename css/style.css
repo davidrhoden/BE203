@@ -14,7 +14,7 @@ html {
 
 .flexbox-container {
     height: 50%;
-    padding: 3% 5%;
+    padding: 3% 2%;
     margin: 0;
     display: -webkit-box;
     display: -moz-box;
@@ -44,12 +44,17 @@ html {
 	font-size: 1.6em;
 	line-height: 1.3em;
 	margin: 10px 2px;
-	padding: 10px;
+	padding: 16px;
 	text-align: left;
+	width: 100%;
 }
 
-.flexbox-body li, .onecolumn-body li{
+.flexbox-body li, .onecolumn-body li {
 	margin: 8px 0;
+}
+
+.flexbox-body p {
+	margin: 1em 0 0 0;
 }
 
 .onecolumn-body {
@@ -67,7 +72,7 @@ html {
 
 .stepheader {
 		background: rgba(107, 156, 173, .2);
-		margin: -10px;
+		margin: -10px -10px 0 -10px;
 		padding: 10px;
 		min-height: 65px;
 }
@@ -285,3 +290,6 @@ p {
 	visibility: hidden;
 }
 
+.keystep {
+	font-size: .75em;
+}
