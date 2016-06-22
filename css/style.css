@@ -78,7 +78,25 @@ html {
 }
 
 .button {
+	position: absolute;
+	top: 48%;
 	text-align: center;
+}
+
+.button.left {
+	left: 0;
+}
+
+.button.right {
+	right: 0;
+}
+
+.button.left a {
+	border-radius: 0 6px 6px 0;
+	}
+
+.button.right a {
+	border-radius: 6px 0 0 6px;
 }
 
 .button a {
@@ -87,7 +105,6 @@ html {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: white;
-	border-radius: 6px;
 	padding: 10px;
 	text-decoration: none;
 }
