@@ -325,7 +325,6 @@ background: rgba(107, 156, 173, .15);
 	top: 100%;
 	right: 0;
 	text-align: center;
-	text-transform: uppercase;
 	width: 66.5%;
 }
 
@@ -407,4 +406,9 @@ p {
 
 .largetype {
 	font-size: 2em;
+}
+
+p.and {
+	margin:0;
+	padding: 0;
 }
