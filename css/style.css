@@ -347,7 +347,7 @@ background: rgba(107, 156, 173, .15);
 		opacity: 0;
 	}
 	100% {
-		top: 10%;
+		top: 7%;
 		opacity: 1;
 	}
 }
@@ -371,6 +371,13 @@ p {
 
 	animation: turnblack .5s linear;
 	animation-delay: 9s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+.and {
+	animation: turnblack .5s linear;
+	animation-delay: 9.35s;
 	animation-iteration-count: 1;
 	animation-fill-mode:forwards;
 }
